@@ -25,6 +25,10 @@ addToCollection('Girls Like You', 'Maroon 5', 2017);
 addToCollection('Shape Of You', 'Ed Sheeran', 2017);
 addToCollection('Talking To The Moon', 'Bruno Mars', 2010);
 addToCollection('Not Afraid', 'Eminem', 2010);
+addToCollection(`It's You`, 'Ali Gatie', 2019);
+addToCollection('The Lazy Song', 'Bruno Mars', 2010);
+console.log(collection);
+
 
 
 
