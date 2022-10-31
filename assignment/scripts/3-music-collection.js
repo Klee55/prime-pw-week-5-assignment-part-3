@@ -43,3 +43,21 @@ function showCollection(array){
 }
 
 console.log(showCollection(collection));
+
+function findByArtist(artist){
+    let result = [];
+    for (i = 0 ; i < collection.length; i++){
+        let artistAlbum = collection[i];
+        if(artist ===artistAlbum.artist ){
+            result.push(artistAlbum);
+        }
+    }
+    return result;
+}
+
+console.log(findByArtist('Bruno Mars'));
+console.log(findByArtist('Taylor Swift'));
+console.log(findByArtist('Ed Sheeran'));
+console.log(findByArtist('Ali Gatie'));
+console.log(findByArtist('James Blunt'))
+console.log(findByArtist('Khue Lee'));
