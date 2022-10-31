@@ -3,15 +3,15 @@ console.log('***** Music Collection *****')
 let collection = [];
 
 function addToCollection(title, artist, yearPublished){
-    let musiclist = {
+    let musicList = {
         title:'',
         artist:'',
         yearPublished:'',
     }
-    musiclist.title = title;
-    musiclist.artist = artist;
-    musiclist.yearPublished = yearPublished;
-    collection.push(musiclist);
+    musicList.title = title;
+    musicList.artist = artist;
+    musicList.yearPublished = yearPublished;
+    collection.push(musicList);
     return collection;
     
 }
@@ -29,12 +29,17 @@ addToCollection(`It's You`, 'Ali Gatie', 2019);
 addToCollection('The Lazy Song', 'Bruno Mars', 2010);
 console.log(collection);
 
-
-
-
-
-
-
 //music1.title = 'Lee';
 //music1.title = 'Awesome';
 
+function showCollection(array){
+    console.log(array.length);
+    for (i = 0; i < array.length; i++){
+        album = array[i];
+        //i = array[i];
+        //console.log(`${array.title} by ${array.artist}`);
+        console.log(`${album.title} by ${album.artist}, published in ${album.yearPublished}.`);
+}
+}
+
+console.log(showCollection(collection));
